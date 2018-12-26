@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #eee;
+  height: 100vh;
+ width: 100%;
+}
+.calculator {
+  background: #333;
+  height: auto;
+  width: 300px;
+  padding-bottom: 15px;
+  border-radius: 7px;
+  border: solid 1px #000;
+  margin: 30px auto;
+}
+.screen {
+  padding: 2px;
+  width: 270px;
+  margin: 15px 5px 5px 15px;
+  height: 65px;
+  background: rgb(5, 34, 5);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 7px;
+}
+.buttons {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  margin: 15px 0;
+  justify-content: center;
+}
+.btn {
+  width: 60px;
+  height: 35px;
+  border-radius: 7px;
+  background: #c0c0c0;
+  font-weight: bolder;
+  user-select: none;
+  border: none;
+  cursor: pointer;
+}
+.btn[data-num="*"],
+.btn[data-num="+"],
+.btn[data-num="-"],
+.btn[data-num="/"] {
+  background: #fff;
+}
+
+.btn-equal {
+  width: 60px;
+  height: 35px;
+  border-radius: 7px;
+  background: #029402;
+  font-weight: bolder;
+  user-select: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-clear {
+  width: 60px;
+  height: 35px;
+  border-radius: 7px;
+  background: #f51010;
+  font-weight: bolder;
+  user-select: none;
+  border: none;
+  cursor: pointer;
+}
